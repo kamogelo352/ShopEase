@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | ShopEase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="protectPage(); loadProducts();">
+
+  <!-- TOP NAVIGATION -->
+  <nav class="nav">
+    <h2>ShopEase</h2>
+
+    <div>
+      <a href="cart.html">Cart</a>
+      <a href="profile.html">Profile</a>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <!-- SEARCH / FILTER CONTROLS -->
+  <div class="controls">
+    <input id="search" type="text" placeholder="Search products">
+    <select id="category">
+      <option value="all">All Categories</option>
+    </select>
+  </div>
+
+  <!-- PRODUCTS LIST -->
+  <main id="products" class="products"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
