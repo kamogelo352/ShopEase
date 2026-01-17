@@ -67,4 +67,43 @@ body {
   width: 100%;
   object-fit: contain;
 }
+.cart {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 15px;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-info h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.cart-info p {
+  font-weight: bold;
+}
+
+.cart-total {
+  margin-top: 20px;
+  text-align: right;
+}
 

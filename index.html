@@ -10,13 +10,18 @@
   <div class="auth-box">
     <h2>ShopEase</h2>
 
-    <input id="email" type="email" placeholder="Email" />
-    <input id="password" type="password" placeholder="Password" />
+    <!-- FIXED IDS -->
+    <input id="loginEmail" type="email" placeholder="Email" />
+    <input id="loginPassword" type="password" placeholder="Password" />
 
     <button onclick="login()">Login</button>
-    <button onclick="signup()" class="secondary">Sign Up</button>
+    <button onclick="location.href='signup.html'" class="secondary">
+      Sign Up
+    </button>
 
-    <p class="link" onclick="forgotPassword()">Forgot password?</p>
+    <p class="link" onclick="location.href='forgot.html'">
+      Forgot password?
+    </p>
   </div>
 
   <script src="script.js"></script>

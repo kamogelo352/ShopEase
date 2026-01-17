@@ -20,9 +20,21 @@
 
   <!-- SEARCH / FILTER CONTROLS -->
   <div class="controls">
-    <input id="search" type="text" placeholder="Search products">
-    <select id="category">
+    <!-- FIXED SEARCH -->
+    <input
+      id="searchInput"
+      type="text"
+      placeholder="Search products..."
+      oninput="searchProducts()"
+    >
+
+    <!-- FIXED CATEGORIES -->
+    <select id="categorySelect" onchange="filterCategorySelect()">
       <option value="all">All Categories</option>
+      <option value="electronics">Electronics</option>
+      <option value="jewelery">Jewelery</option>
+      <option value="men's clothing">Men's Clothing</option>
+      <option value="women's clothing">Women's Clothing</option>
     </select>
   </div>
 
