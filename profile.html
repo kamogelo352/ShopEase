@@ -5,22 +5,34 @@
   <title>Profile | ShopEase</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body onload="protectPage(); loadProfile();">
+
+<body onload="protectPage(); loadUser(); loadProfile();">
 
   <nav class="nav">
-    <h2>ShopEase</h2>
-    <div>
-      <a href="products.html">Products</a>
-      <a href="cart.html">Cart</a>
-      <button onclick="logout()">Logout</button>
-    </div>
+    <h2 id="userGreeting">ShopEase</h2>
+    <button onclick="logout()">Logout</button>
   </nav>
 
-  <div class="profile">
-    <h3>Your Profile</h3>
-    <p id="profileEmail"></p>
-  </div>
+  <main class="profile">
+
+    <h2>My Profile</h2>
+
+    <label>Email</label>
+    <input id="profileEmail" disabled>
+
+    <label>Full Name</label>
+    <input id="profileName">
+
+    <label>Phone</label>
+    <input id="profilePhone">
+
+    <label>Address</label>
+    <input id="profileAddress">
+
+    <button onclick="saveProfile()">Save Profile</button>
+  </main>
 
   <script src="script.js"></script>
 </body>
 </html>
+

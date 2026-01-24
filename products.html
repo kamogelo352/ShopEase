@@ -5,40 +5,32 @@
   <title>Products | ShopEase</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body onload="protectPage(); loadProducts();">
 
-  <!-- TOP NAVIGATION -->
+<body onload="protectPage(); loadUser(); loadProducts();">
+
   <nav class="nav">
-    <h2>ShopEase</h2>
+    <h2 id="userGreeting">ShopEase</h2>
 
     <div>
+      <input
+        id="searchInput"
+        placeholder="Search products"
+        onkeyup="searchProducts()"
+      />
+
+      <select id="categorySelect" onchange="filterCategorySelect()">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="jewelery">Jewelery</option>
+        <option value="men's clothing">Men</option>
+        <option value="women's clothing">Women</option>
+      </select>
+
       <a href="cart.html">Cart</a>
-      <a href="profile.html">Profile</a>
       <button onclick="logout()">Logout</button>
     </div>
   </nav>
 
-  <!-- SEARCH / FILTER CONTROLS -->
-  <div class="controls">
-    <!-- FIXED SEARCH -->
-    <input
-      id="searchInput"
-      type="text"
-      placeholder="Search products..."
-      oninput="searchProducts()"
-    >
-
-    <!-- FIXED CATEGORIES -->
-    <select id="categorySelect" onchange="filterCategorySelect()">
-      <option value="all">All Categories</option>
-      <option value="electronics">Electronics</option>
-      <option value="jewelery">Jewelery</option>
-      <option value="men's clothing">Men's Clothing</option>
-      <option value="women's clothing">Women's Clothing</option>
-    </select>
-  </div>
-
-  <!-- PRODUCTS LIST -->
   <main id="products" class="products"></main>
 
   <script src="script.js"></script>
