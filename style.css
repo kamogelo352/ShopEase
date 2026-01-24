@@ -1,5 +1,4 @@
 
-
 * {
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -75,9 +74,7 @@ body {
   background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
 }
 
-/* =====================
-   NAVIGATION
-===================== */
+
 
 .nav {
   background: #020617;
@@ -129,9 +126,6 @@ body {
   background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
 }
 
-/* =====================
-   PRODUCTS
-===================== */
 
 .products {
   padding: 30px;
@@ -189,9 +183,6 @@ body {
   background: linear-gradient(135deg, #020617, #0f172a);
 }
 
-/* =====================
-   CART
-===================== */
 
 .cart {
   max-width: 900px;
@@ -243,9 +234,7 @@ body {
   background: linear-gradient(135deg, #b91c1c, #991b1b);
 }
 
-/* =====================
-   PROFILE
-===================== */
+
 
 .profile {
   max-width: 500px;
